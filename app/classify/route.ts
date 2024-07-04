@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import PipelineSingleton from './pipeline';
 
 
-export async function GET(request:any) {
+export async function GET(request: any) {
     const text = request.nextUrl.searchParams.get('text');
     if (!text) {
         return NextResponse.json({
